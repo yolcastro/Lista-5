@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100];
+    int x;
+    int *p;
+
+    printf("Escreva algo:\n");
+    fgets(str, sizeof(str), stdin);
+    
+    str[strcspn(str, "\n")] = '\0';
+    
+    x = strlen(str);
+
+    p = &x;
+
+    printf("[%p] %d\n", p, *p);
+
+    return 0;
+}
