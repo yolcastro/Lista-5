@@ -4,10 +4,10 @@
 
 #define MX 100;
 
-int *alocarMemoria(int qtd){
+int *alocarMemoria(int qtd) {
     int *p = NULL;
 
-    if (!(p = (int*) malloc(qtd * sizeof(int)))){
+    if (!(p = (int*) malloc(qtd * sizeof(int)))) {
         puts("Memória insuficiente");
         exit(1);
     }
