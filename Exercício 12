@@ -107,5 +107,9 @@ int main() {
     printf("Matriz 'M':\n");
     imprimirMatriz(m, N);
 
+    free(px);
+    free(py);
+    free(m);
+
     return 0;
 }
