@@ -66,5 +66,8 @@ int main() {
     printf("Vetor 'F':\n");
     imprimirVetor(pf, N);
 
+    free(px);
+    free(pf);
+
     return 0;
 }
