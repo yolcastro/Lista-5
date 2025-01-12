@@ -62,5 +62,7 @@ int main() {
     printf("Após serem ordenados:\n");
     imprimirVetor(pv, n);
 
+    free(pv);
+
     return 0;
 }
