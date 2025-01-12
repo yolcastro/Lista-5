@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#define TAM 100
+
 void encontrarCaractere(char *str, char c) {
     int encontrado = 0;
 
@@ -19,10 +21,10 @@ void encontrarCaractere(char *str, char c) {
 }
 
 int main() {
-    char str[100];
+    char str[TAM];
     char caractere;
     printf("Digite algo:\n");
-    fgets(str, sizeof(str), stdin);
+    fgets(str, TAM, stdin);
 
     str[strcspn(str, "\n")] = '\0';
 
